@@ -1,0 +1,28 @@
+﻿@using Dewi.Areas.Admin.ViewModels
+@model CreateVM
+<div class="container">
+
+    <h1>Create Member</h1>
+
+    <form method="post" enctype="multipart/form-data">
+        <div class="form-group">
+            <label asp-for="Name">Enter Name</label>
+            <input asp-for="Name" class="form-control" >
+            <span asp-validation-for="Name" style="color:red"></span>
+           
+        </div>
+        <div class="form-group">
+            <label asp-for="Position">Enter Position</label>
+            <input asp-for="Position" class="form-control">
+            <span asp-validation-for="Position" style="color:red"></span>
+        </div>
+        <div class="form-group form-check">
+            <label asp-for="File">Enter Image</label>
+            <input asp-for="File" class="form-control">
+            <span asp-validation-for="File" style="color:red"></span>
+        </div>
+        
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+</div>
